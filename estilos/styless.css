@@ -1,13 +1,33 @@
-body{
 
-    background-image: url('/imagenes/1978.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
+header {
+    height: 10vh;
 
 }
+.columns {
+    height: 80vh;
+}
+body{
+  background-image: url('/imagenes/1978.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@keyframes animation{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1.3vw);
+    }
+}
+.card:hover {
+    transform: translateY(-1.3vw);
+    box-shadow: 0 20px 30px #7a7a7a;
+    animation-name: animation;
+    animation-duration: 0.5s;
+}
+
 h4{
     position: relative;
     display: flex;
@@ -69,3 +89,4 @@ h4{
     margin: 16px 0;
     font-size: 16px;
   }
+
